@@ -1,0 +1,11 @@
+@keyframes hammer {
+  0% {
+    transform: rotateZ(0);
+  }
+  50%{
+    transform: rotateZ(3deg);
+  }
+  100% {
+    transform: rotateZ(-3deg);
+  }
+}
