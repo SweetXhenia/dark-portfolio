@@ -33,8 +33,10 @@ body {
   background-color: var(--color-primary); }
 
 .about {
+  margin-top: 10rem;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 @keyframes hammer {
   0% {
@@ -142,7 +144,8 @@ body {
     letter-spacing: -1px;
     font-size: 2rem;
     padding: 2rem;
-    background-color: var(--color-secondary); }
+    background-color: var(--color-secondary);
+    border-radius: 5px; }
   .about-me__name {
     font-size: 7rem;
     color: var(--color-white);
@@ -157,8 +160,35 @@ body {
     text-align: justify; }
 
 .about-pic__picture {
-  height: 50rem; }
+  height: 75rem;
+  display: flex;
+  align-items: center; }
 
-.about-follow__me {
-  writing-mode: vertical-rl;
-  text-transform: uppercase; }
+.about-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .about-follow__me {
+    font-size: 2.2rem;
+    letter-spacing: 20px;
+    writing-mode: vertical-rl;
+    text-transform: uppercase; }
+    .about-follow__me--line::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 20rem;
+      background-color: var(--color-white); }
+    .about-follow__me--icon {
+      display: flex;
+      flex-direction: column; }
+      .about-follow__me--icon-1 {
+        height: 4.2rem;
+        width: 4.2rem;
+        fill: var(--color-white); }
+        .about-follow__me--icon-1:not(:last-child) {
+          margin-bottom: 2rem; }
+        .about-follow__me--icon-1:hover {
+          cursor: pointer;
+          animation: hammer .2s infinite; }

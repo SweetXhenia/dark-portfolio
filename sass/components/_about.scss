@@ -11,6 +11,7 @@
     font-size: 2rem;
     padding: 2rem;
     background-color: var(--color-secondary);
+    border-radius: 5px;
   }
   &__name {
     font-size: 7rem;
@@ -31,12 +32,43 @@
 
 .about-pic {
   &__picture {
-    height: 50rem;
+    height: 75rem;
+    display: flex;
+    align-items: center;
   }
 }
 .about-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   &__me {
+    font-size: 2.2rem;
+    letter-spacing: 20px;
     writing-mode: vertical-rl;
     text-transform: uppercase;
+    &--line::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 20rem;
+      background-color: var(--color-white);
+    }
+    &--icon {
+      display: flex;
+      flex-direction: column;
+      &-1 {
+        height: 4.2rem;
+        width: 4.2rem;
+        fill: var(--color-white);
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        &:hover{
+          cursor: pointer;
+          animation: hammer .2s infinite;
+        }
+      }
+    }
   }
 }

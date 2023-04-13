@@ -5,6 +5,8 @@
   background-color: var(--color-primary);
 }
 .about {
+  margin-top: 10rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
