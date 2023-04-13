@@ -42,9 +42,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: -10%;
+  right: -8%;
+
   &__me {
     font-size: 2.2rem;
-    letter-spacing: 20px;
+    letter-spacing: 15px;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     &--line::before {
@@ -61,12 +65,15 @@
         height: 4.2rem;
         width: 4.2rem;
         fill: var(--color-white);
+        transition: fill .3s ease;
         &:not(:last-child) {
           margin-bottom: 2rem;
         }
         &:hover{
           cursor: pointer;
           animation: hammer .2s infinite;
+          fill: var(--color-quaternary);
+
         }
       }
     }

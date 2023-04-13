@@ -1,9 +1,10 @@
 @charset "UTF-8";
 :root {
-  --color-primary: #00005c;
-  --color-secondary: #3b185f;
-  --color-tertiary:#c060A1;
-  --color-quaternary:#f0caa3;
+  --color-primary: #37306B;
+  --color-primary-light: #433b80;
+  --color-secondary: #66347F;
+  --color-tertiary:#9E4784;
+  --color-quaternary:#D27685;
   --color-white:#fff; }
 
 * {
@@ -29,14 +30,14 @@ body {
 
 .container {
   max-width: 75vw;
-  margin: 0 auto;
-  background-color: var(--color-primary); }
+  margin: 0 auto; }
 
 .about {
   margin-top: 10rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  position: relative; }
 
 @keyframes hammer {
   0% {
@@ -168,10 +169,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: absolute;
+  top: -10%;
+  right: -8%; }
   .about-follow__me {
     font-size: 2.2rem;
-    letter-spacing: 20px;
+    letter-spacing: 15px;
     writing-mode: vertical-rl;
     text-transform: uppercase; }
     .about-follow__me--line::before {
@@ -186,9 +190,48 @@ body {
       .about-follow__me--icon-1 {
         height: 4.2rem;
         width: 4.2rem;
-        fill: var(--color-white); }
+        fill: var(--color-white);
+        transition: fill .3s ease; }
         .about-follow__me--icon-1:not(:last-child) {
           margin-bottom: 2rem; }
         .about-follow__me--icon-1:hover {
           cursor: pointer;
-          animation: hammer .2s infinite; }
+          animation: hammer .2s infinite;
+          fill: var(--color-quaternary); }
+
+#projects {
+  background-color: var(--color-primary-light); }
+
+.projects {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5rem 0;
+  gap: 5rem; }
+  .projects__icon {
+    height: 6rem;
+    position: absolute;
+    top: -3rem;
+    left: 4rem; }
+  .projects__number {
+    font-family: 'Crimson Pro', sans-serif;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1.4; }
+  .projects__name {
+    font-size: 2.5rem; }
+
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-quaternary);
+  border-radius: 4px;
+  border-top-right-radius: 30px;
+  width: calc(100%/4);
+  aspect-ratio: 16/11;
+  position: relative; }
+  .projects-box:nth-child(n+3) {
+    border-style: dashed; }

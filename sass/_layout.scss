@@ -2,11 +2,11 @@
   max-width: 75vw;
   
   margin: 0 auto;
-  background-color: var(--color-primary);
 }
 .about {
   margin-top: 10rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  position: relative;
 }

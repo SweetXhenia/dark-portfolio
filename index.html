@@ -18,67 +18,112 @@
     <title>LP Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <img src="img/png/logo-light.png" alt="logo" class="header__logo" />
-        <nav class="header__nav">
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="#" class="nav-item__link">O mě</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-item__link">Služby</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-item__link">Portfolio</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-item__link">Napiš mi</a>
-            </li>
-            <li class="nav-list__item">
-              <button class="btn-nav">
-                <a class="btn-nav__link" href="img/cv.jpg" download
-                  >Životopis</a
-                >
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="about">
-        <div class="about-me">
-          <h2 class="about-me__welcome">Vítej! Já jsem</h2>
-          <h1 class="about-me__name">Lucie Podhorecká</h1>
-          <h3 class="about-me__job">Front end developer v plenkách</h3>
-          <p class="about-me__paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
-            corporis exercitationem! Et deleniti odio cupiditate architecto
-            incidunt sequi rerum id iste alias, dolores quibusdam laudantium
-            fuga minus quam nihil obcaecati.
-          </p>
-        </div>
-        <div class="about-pic">
-          <img src="img/lp.png" alt="Photo of me" class="about-pic__picture" />
-        </div>
-        <div class="about-follow">
-          <p class="about-follow__me">Follow me</p>
-          <div class="about-follow__me--line">&nbsp;</div>
-          <div class="about-follow__me--icon">
-            <svg class="about-follow__me--icon-1">
-              <use xlink:href="img/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            <svg class="about-follow__me--icon-1">
-              <use xlink:href="img/symbol-defs.svg#icon-facebook2"></use>
-            </svg>
-            <svg class="about-follow__me--icon-1">
-              <use xlink:href="img/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-            <svg class="about-follow__me--icon-1">
-              <use xlink:href="img/symbol-defs.svg#icon-github"></use>
-            </svg>
+    <section id="header">
+      <div class="container">
+        <header class="header">
+          <img src="img/png/logo-light.png" alt="logo" class="header__logo" />
+          <nav class="header__nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#" class="nav-item__link">O mě</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-item__link">Služby</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-item__link">Portfolio</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-item__link">Napiš mi</a>
+              </li>
+              <li class="nav-list__item">
+                <button class="btn-nav">
+                  <a class="btn-nav__link" href="img/cv.jpg" download
+                    >Životopis</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="about">
+          <div class="about-me">
+            <h2 class="about-me__welcome">Vítej! Já jsem</h2>
+            <h1 class="about-me__name">Lucie Podhorecká</h1>
+            <h3 class="about-me__job">Front end kodér v plenkách</h3>
+            <p class="about-me__paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              corporis exercitationem! Et deleniti odio cupiditate architecto
+              incidunt sequi rerum id iste alias, dolores quibusdam laudantium
+              fuga minus quam nihil obcaecati.
+            </p>
+          </div>
+          <div class="about-pic">
+            <img
+              src="img/lp.png"
+              alt="Photo of me"
+              class="about-pic__picture"
+            />
+          </div>
+          <div class="about-follow">
+            <p class="about-follow__me">Follow me</p>
+            <div class="about-follow__me--line">&nbsp;</div>
+            <div class="about-follow__me--icon">
+              <svg class="about-follow__me--icon-1">
+                <use xlink:href="img/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <svg class="about-follow__me--icon-1">
+                <use xlink:href="img/symbol-defs.svg#icon-facebook2"></use>
+              </svg>
+              <svg class="about-follow__me--icon-1">
+                <use xlink:href="img/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+              <svg class="about-follow__me--icon-1">
+                <use xlink:href="img/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="projects">
+          <div class="projects-box">
+            <img
+              src="img/icon/html-5.png"
+              alt="HTML icon"
+              class="projects__icon"
+            />
+            <h1 class="projects__number">10</h1>
+            <h2 class="projects__name">HTML5</h2>
+          </div>
+          <div class="projects-box">
+            <img
+              src="img/icon/css-3.png"
+              alt="CSS icon"
+              class="projects__icon"
+            />
+            <h1 class="projects__number">10</h1>
+            <h2 class="projects__name">CSS</h2>
+          </div>
+          <div class="projects-box">
+            <img src="img/icon/js.png" alt="JS icon" class="projects__icon" />
+            <h1 class="projects__number">0</h1>
+            <h2 class="projects__name">JavaScript</h2>
+          </div>
+          <div class="projects-box">
+            <img
+              src="img/icon/react.png"
+              alt="React icon"
+              class="projects__icon"
+            />
+            <h1 class="projects__number">0</h1>
+            <h2 class="projects__name">React</h2>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
