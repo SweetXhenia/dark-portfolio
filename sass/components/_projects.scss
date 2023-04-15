@@ -1,5 +1,5 @@
 #projects{
-    background-color: var(--color-primary-light);
+    background-color: var(--color-secondary); 
 }
 .projects {
   margin-top: 10rem;
@@ -34,7 +34,7 @@
     justify-content: center;
     border: 1px solid var(--color-quaternary);
     border-radius: 4px;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 50px;
     width: calc(100%/4);
     aspect-ratio: 16/11;
     position: relative;

@@ -1,13 +1,27 @@
 :root {
-  --color-primary: #37306B;
+  /* --color-primary: #37306B;
   --color-primary-light: #433b80;
   --color-primary-light-2:#BC6FF1;
   --color-secondary: #66347F;
   --color-tertiary:#9e4784;
   --color-tertiary-rgb:158, 71, 132;
   --color-quaternary:#d27685;
-  --color-quaternary-rgb: 210, 118, 133;
-  --color-white:#fff;
+  --color-quaternary-rgb: 210, 118, 133; */
+   --color-white:#fff;
+  /*--color-primary: #e95a53;
+  --color-secondary: #F27059 ;
+  --color-tertiary: #F4845F ;
+  --color-tertiary-rgb: 244, 132, 95;
+  --color-quaternary: #F79D65 ;
+  --color-quaternary-rgb: 247, 157, 101;
+  --color-pet: #F7B267; */
+  --color-primary: #2D2424;
+  --color-secondary: #5C3D2E ;
+  --color-tertiary: #B85C38 ;
+  --color-tertiary-rgb:184, 92, 56;
+  --color-quaternary: #E0C097 ;
+  --color-quaternary-rgb:224, 192, 151;
+  --color-pet: #DFBBB1;
 }
 
 * {
@@ -22,6 +36,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  backface-visibility: hidden;
 }
 body {
   font-family: "Cantarell", sans-serif;
