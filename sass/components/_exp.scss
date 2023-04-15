@@ -1,0 +1,136 @@
+#experiences {
+  background-color: var(--color-secondary);
+  height: 100rem; //nezapomeň tohle vymazat
+}
+.experiences-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__heading {
+    margin: 8rem 0 2rem;
+    font-size: 6rem;
+    font-family: "Crimson Pro", sans-serif;
+  }
+  &__text {
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+    width: 75%;
+    text-align: center;
+  }
+}
+/* .exp-timeline__row {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.exp-timeline__column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative; 
+  width: calc(100% /5);
+}
+.exp__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  &--heading {
+    font-size: 2.5rem;
+  }
+  &--paragraph {
+    font-size: 1.5rem;
+  }
+}
+.exp-timeline__year {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  font-family: "Crimson Pro", sans-serif;
+  letter-spacing: 3px;
+  background-color: var(--color-tertiary);
+  clip-path: polygon(75% 0%, 100% 51%, 78% 100%, 0% 100%, 0 52%, 0% 0%);
+  z-index: 2;
+  
+}
+.exp-timeline-osa{
+    position: relative;
+}
+.exp-timeline__line {
+  &::before {
+    position: absolute;
+    top: 50%;
+    content: "";
+    display: block;
+    width: 550%; 
+    height: 2px;
+    background-color: var(--color-tertiary);
+    top: 50%;
+    z-index: 1;
+  }
+}
+////////////////////////////////////////
+/// 
+ */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.exp-mid-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: calc(100% / 5);
+    &--heading {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    &--text {
+      font-size: 1.7rem;
+      margin: 1rem 0 2rem;
+    }
+  }
+}
+.exp-column-year {
+  display: flex;
+  flex-direction: row;
+  //gap: 2rem;
+  &__arrow {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    width: calc(100% / 5);
+    background-color: var(--color-tertiary);
+    clip-path: polygon(10% 0%, 75% 0%, 100% 50%, 75% 100%, 10% 100%); 
+    z-index: 2;
+    position: relative;
+    
+    /*  &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 300rem;
+        height: 2px;
+        top: 50%;
+        background-color: aqua;
+        z-index: 1;
+    } */
+    &--text {
+      text-align: center;
+    }
+  }
+}
+.exp-down-column{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    //width: calc(100% /5);
+}

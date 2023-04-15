@@ -61,14 +61,19 @@
     &--icon {
       display: flex;
       flex-direction: column;
+      & a{
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
       &-1 {
         height: 4.2rem;
         width: 4.2rem;
         fill: var(--color-white);
         transition: fill .3s ease;
-        &:not(:last-child) {
+        /* &:not(:last-child) {
           margin-bottom: 2rem;
-        }
+        } */
         &:hover{
           cursor: pointer;
           animation: hammer .2s infinite;
