@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  //margin: 4rem 0;
+}
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  padding: 1rem 1.5rem;
+  margin: 4rem 2rem;
+  &__heading {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+.form-contact-info {
+  display: flex;
+  flex-direction: row;
+  &:not(:last-child){
+    margin-bottom: 2.5rem;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: var(--color-tertiary);
+    margin: 1rem 3rem 0 0;
+  }
+  &__heading {
+    font-size: 1.2rem;
+  }
+  &__subheading{
+    font-weight: 1;
+    font-size: 2.5rem; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    animation: hammer 0.2s infinite;
+  }
+}
+.form-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
