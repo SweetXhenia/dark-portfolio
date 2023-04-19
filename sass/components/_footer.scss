@@ -28,17 +28,23 @@
   }
   &__icon {
     display: flex;
+    justify-content: space-evenly; 
+    margin-top: 7rem;
     gap: 3rem;
   }
   &__icon-1 {
     height: 5rem;
     width: 5rem;
-    
+    fill: var(--color-white);
+    &:hover{
+      animation: hammer .2s infinite;
+      fill: var(--color-quaternary);
+    }
   }
   &__line {
     width: 50rem;
     height: 50rem;
-    border: 1px dashed black;
+    border: 1px dashed var(--color-white);
     border-radius: 50%;
   }
 }

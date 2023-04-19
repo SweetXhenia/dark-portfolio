@@ -653,14 +653,20 @@ body {
     text-align: center; }
   .footer-text__icon {
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 7rem;
     gap: 3rem; }
   .footer-text__icon-1 {
     height: 5rem;
-    width: 5rem; }
+    width: 5rem;
+    fill: var(--color-white); }
+    .footer-text__icon-1:hover {
+      animation: hammer .2s infinite;
+      fill: var(--color-quaternary); }
   .footer-text__line {
     width: 50rem;
     height: 50rem;
-    border: 1px dashed black;
+    border: 1px dashed var(--color-white);
     border-radius: 50%; }
 
 #copyright {
