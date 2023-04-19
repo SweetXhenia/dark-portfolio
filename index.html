@@ -523,9 +523,7 @@
             </a>
             <div class="form-contact-info__text">
               <h3 class="form-contact-info__heading">TELEFON</h3>
-              <h4 class="form-contact-info__subheading">
-                +420 723 070 810
-              </h4>
+              <h4 class="form-contact-info__subheading">+420 723 070 810</h4>
             </div>
           </div>
           <div class="form-contact-info">
@@ -536,18 +534,53 @@
             </a>
             <div class="form-contact-info__text">
               <h3 class="form-contact-info__heading">LINKEDIN</h3>
-              <h4 class="form-contact-info__subheading">
-                Lucie Podhorecká
-              </h4>
+              <h4 class="form-contact-info__subheading">Lucie Podhorecká</h4>
             </div>
           </div>
         </div>
         <div class="form-form">
-          <h2 class="form-form__heading">Ozvi se</h2>
-          <input type="text" class="form-input form-input__name" id="name" name="Jméno" placeholder="Jméno" required> <label for="" id="name">Jméno</label>
-          <input type="email" class="form-input form-input__email" id="email" name="E-mail" placeholder="E-mail" required><label for="" id="email">E-mail</label>
-          <input type="tel" class="form-input form-input__tel" id="tel" name="Telefonní číslo" placeholder="Telefonní číslo" required><labe id="tel">Telefonní číslo</labe>
-          <input type="text" class="form-input form-input__text" id="form-text" name="Zpráva" placeholder="Zpráva" required><labe id="form-text">Zpráva</labe>
+          <form action="">
+            <h2 class="form-form__heading">Ozvi se</h2>
+            <input
+              type="text"
+              class="form-input form-input__name"
+              id="name"
+              name="Jméno"
+              placeholder="Jméno"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              class="form-input form-input__email"
+              id="email"
+              name="E-mail"
+              placeholder="E-mail"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="tel"
+              class="form-input form-input__tel"
+              id="tel"
+              name="Telefonní číslo"
+              placeholder="Telefonní číslo"
+              autocomplete="off"
+              required
+            />
+            <!-- <input type="text" class="form-input form-input__text" id="form-text" name="Zpráva" placeholder="Zpráva" required> -->
+            <textarea
+              placeholder="Zpráva"
+              name="Zpráva"
+              id=""
+              cols="30"
+              rows="10"
+              class="form-textarea"
+              autocomplete="off"
+              required
+            ></textarea>
+            <button type="submit" class="btn-nav">Poslat</button>
+          </form>
         </div>
       </div>
     </section>
