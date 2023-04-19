@@ -58,6 +58,24 @@
         box-shadow: 5px 8px 10px #000;
       }
     }
+    &:after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: -70%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.2s;
+      font-size: 1.1rem;
+      width: 100%;  
+    }
+    &:hover:after {
+      opacity: 1; 
+    } 
   }
 }
 .btn-active {

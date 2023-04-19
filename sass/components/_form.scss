@@ -57,13 +57,6 @@
     font-size: 6rem;
     margin-bottom: 5rem;
   }
-
-  input:autofill{
-    background-color: aqua !important;
-  }
-  input:-webkit-autofill{
-    background-color: aqua !important;
-  }
 }
 .form-input {
   display: flex;
@@ -80,6 +73,7 @@
   border-radius: 9px;
   font-weight: 700;
   letter-spacing: 2px;
+  transition: all 0.1s;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
@@ -87,6 +81,12 @@
   &:valid {
     border-bottom: 3px solid green;
   }
+  /* 
+  uplatňuje se i když tam není nic napsáno
+  &:invalid {
+    border-bottom: 1px dashed red; 
+
+  } */
   &:focus {
     border: 3px solid var(--color-secondary);
     outline: none;
@@ -122,7 +122,3 @@
     border-bottom: 3px solid green;
   }
 }
-/* .form-btn{
-  padding: 1rem 2rem;
-  font-size: 3rem;
-} */

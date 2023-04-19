@@ -29,13 +29,13 @@
                 <a href="#" class="nav-item__link">O mě</a>
               </li>
               <li class="nav-list__item">
-                <a href="#" class="nav-item__link">Služby</a>
+                <a href="#experiences" class="nav-item__link">Zkušenosti</a>
               </li>
               <li class="nav-list__item">
                 <a href="#portfolio" class="nav-item__link">Portfolio</a>
               </li>
               <li class="nav-list__item">
-                <a href="#" class="nav-item__link">Napiš mi</a>
+                <a href="#form" class="nav-item__link">Napiš mi</a>
               </li>
               <li class="nav-list__item">
                 <button class="btn-nav">
@@ -105,7 +105,7 @@
 
     <section id="projects">
       <div class="container projects">
-        <div class="projects-box">
+        <div class="projects-box" data-tooltip="Aktuální počet projektů v HTML">
           <img
             src="img/icon/html-5.png"
             alt="HTML icon"
@@ -114,17 +114,17 @@
           <h1 class="projects__number">10</h1>
           <h2 class="projects__name">HTML5</h2>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-tooltip="Aktuální počet projektů v CSS">
           <img src="img/icon/css-3.png" alt="CSS icon" class="projects__icon" />
           <h1 class="projects__number">8</h1>
           <h2 class="projects__name">CSS</h2>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-tooltip="Aktuální počet projektů v JS">
           <img src="img/icon/js.png" alt="JS icon" class="projects__icon" />
           <h1 class="projects__number">0</h1>
           <h2 class="projects__name">JavaScript</h2>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-tooltip="Aktuální počet projektů v Reactu">
           <img
             src="img/icon/react.png"
             alt="React icon"
@@ -149,8 +149,8 @@
           </div>
           <div class="portfolio-btn">
             <button class="portfolio-btn-1 btn-active">Všechny projekty</button>
-            <button class="portfolio-btn-1">Osobní projekty</button>
-            <button class="portfolio-btn-1">Pracovní projekty</button>
+            <button class="portfolio-btn-1" data-tooltip="Aktuálně nefunkční">Osobní projekty</button>
+            <button class="portfolio-btn-1" data-tooltip="Aktuálně nefunkční">Pracovní projekty</button>
           </div>
         </div>
         <div class="portfolio-projects">
@@ -539,7 +539,7 @@
           </div>
         </div>
         <div class="form-form">
-          <form action="">
+          <form action="send-mail.php" method="post">
             <h2 class="form-form__heading">Ozvi se</h2>
             <input
               type="text"
