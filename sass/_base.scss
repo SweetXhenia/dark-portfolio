@@ -24,6 +24,14 @@
   --color-pet: #DFBBB1;
 }
 
+$bp-largest:75em;   //1200px/16 = 75
+$bp-large:68.75em;  //1100px/16 = 68.75
+$bp-mid:56.25em;    //900
+$bp-small:37.5em;   //600
+$bp-mini:31.25em;   //500
+
+
+
 * {
   margin: 0; /* globální reset aby se začalo od nuly */
   padding: 0;
@@ -45,4 +53,5 @@ body {
   line-height: 1.6;
   background-color: var(--color-primary);
   color: var(--color-white);
+  position: relative;
 }

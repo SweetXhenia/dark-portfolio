@@ -14,10 +14,16 @@
   &__heading {
     font-size: 5rem;
     margin-bottom: 1rem;
+    @media only screen and (max-width:$bp-largest){
+    font-size: 3rem;
+    }
   }
   &__text {
     font-size: 2rem;
     margin-bottom: 3rem;
+    @media only screen and (max-width:$bp-largest){
+    font-size: 1.4rem;
+    }
   }
 }
 .form-contact-info {
@@ -31,16 +37,26 @@
     height: 5rem;
     width: 5rem;
     fill: var(--color-tertiary);
-    margin: 1rem 3rem 0 0;
+    padding: 1rem;
+    @media only screen and (max-width:$bp-largest){
+    height: 5rem;
+    width: 5rem;
+    }
   }
   &__heading {
     font-size: 1.2rem;
+    @media only screen and (max-width:$bp-largest){
+    font-size: 1rem;
+    }
   }
   &__subheading {
     font-weight: 1;
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    @media only screen and (max-width:$bp-largest){
+    font-size: 2rem;
+    }
   }
 
   a:hover {
@@ -56,6 +72,10 @@
   &__heading {
     font-size: 6rem;
     margin-bottom: 5rem;
+    @media only screen and (max-width:$bp-largest){
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    }
   }
 }
 .form-input {
@@ -74,6 +94,10 @@
   font-weight: 700;
   letter-spacing: 2px;
   transition: all 0.1s;
+  @media only screen and (max-width:$bp-largest){
+    height: 5rem;
+    font-size: 1.5rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: 3rem;
@@ -112,6 +136,11 @@
   letter-spacing: 2px;
   outline: none;
   margin-bottom: 3rem;
+  @media only screen and (max-width:$bp-largest){
+   height: 15rem; 
+   font-size: 1.5rem;
+   margin-bottom: 1.5rem;
+  }
   &:focus:valid {
     border-bottom: 3px solid green;
   }

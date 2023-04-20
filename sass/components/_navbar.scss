@@ -3,13 +3,18 @@
   justify-content: space-between;
   margin-top: 2rem;
   font-size: 2.5rem;
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 1.7rem;
+  }
 
   &__logo {
     height: 11rem;
-    transition: transform .2s;
-    &:hover{
-      animation: hammer .2s infinite;
-      //transform: scale(1.3);
+    transition: transform 0.2s;
+    &:hover {
+      animation: hammer 0.2s infinite;
+    }
+    @media only screen and (max-width: $bp-largest) {
+      height: 6rem;
     }
   }
   &__nav {
@@ -29,6 +34,9 @@
     justify-content: space-around;
     position: relative;
     letter-spacing: -2px;
+    @media only screen and (max-width: $bp-largest) {
+      width: 11rem;
+    }
     &:nth-last-child(2) {
       margin-right: 2rem;
     }
@@ -90,9 +98,9 @@
   padding: 2rem 3rem;
   border: none;
   border-radius: 10px;
-
   background-color: var(--color-quaternary);
   transition: all 0.3s ease;
+
   &__link {
     color: var(--color-primary);
     text-decoration: none;
@@ -108,5 +116,9 @@
   &:focus {
     transform: translateY(-5px);
     box-shadow: -2px 4px 10px #000;
+  }
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 2rem;
+    padding: 1rem 2rem;
   }
 }

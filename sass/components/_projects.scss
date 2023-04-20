@@ -14,22 +14,27 @@
     position: absolute;
     top: -3rem;
     left: 4rem;
+    @media only screen and (max-width: $bp-largest) {
+      height: 4.5rem;
+    }
   }
   &__number {
     font-family: "Crimson Pro", sans-serif;
     font-size: 8rem;
     font-weight: 900;
     line-height: 1.4;
-    
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 6rem;
+    }
   }
   &__name {
     font-size: 2.5rem;
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 1.7rem;
+    }
   }
-  
 }
-#html{
-  animation: countHTML 5s steps(10);   
-}
+
 .projects-box {
   display: flex;
   flex-direction: column;
@@ -54,6 +59,12 @@
     border-radius: 5px;
     opacity: 0;
     transition: opacity 0.2s;
+    @media only screen and (max-width: $bp-largest) {
+      top: -4.5rem;
+      left: 70%;
+      width: 50%;
+      text-align: center;
+    }
   }
   &:hover:after {
     opacity: 1;
