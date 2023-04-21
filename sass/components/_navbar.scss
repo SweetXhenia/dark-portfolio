@@ -3,6 +3,9 @@
   justify-content: space-between;
   margin-top: 2rem;
   font-size: 2.5rem;
+  @media only screen and (max-width:$bp-big){
+    font-size: 2.2rem;
+  }
   @media only screen and (max-width: $bp-largest) {
     font-size: 1.7rem;
   }
@@ -13,6 +16,9 @@
     &:hover {
       animation: hammer 0.2s infinite;
     }
+  @media only screen and (max-width:$bp-big){
+    height: 9rem;
+  }
     @media only screen and (max-width: $bp-largest) {
       height: 6rem;
     }
@@ -34,6 +40,9 @@
     justify-content: space-around;
     position: relative;
     letter-spacing: -2px;
+    @media only screen and (max-width:$bp-big){
+    width: 14rem;
+    }
     @media only screen and (max-width: $bp-largest) {
       width: 11rem;
     }
@@ -116,6 +125,10 @@
   &:focus {
     transform: translateY(-5px);
     box-shadow: -2px 4px 10px #000;
+  }
+  @media only screen and (max-width:$bp-big){
+    font-size: 2.5rem;
+    padding: 1.5rem 2.5rem;
   }
   @media only screen and (max-width: $bp-largest) {
     font-size: 2rem;

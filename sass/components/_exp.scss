@@ -10,6 +10,10 @@
     margin: 8rem 0 2rem;
     font-size: 6rem;
     font-family: "Crimson Pro", sans-serif;
+    @media only screen and (max-width: $bp-big) {
+      margin: 5rem 0 2rem;
+      font-size: 5rem;
+    }
     @media only screen and (max-width: $bp-largest) {
       font-size: 4rem;
       margin: 4rem 0 2rem;
@@ -20,6 +24,10 @@
     margin-bottom: 5rem;
     width: 75%;
     text-align: justify;
+    @media only screen and (max-width: $bp-big) {
+      font-size: 1.7rem;
+      margin-bottom: 3rem;
+    }
     @media only screen and (max-width: $bp-largest) {
       font-size: 1.3rem;
       margin-bottom: 2.5rem;
@@ -102,6 +110,11 @@
       font-size: 3rem;
       margin: 0.5rem 0;
       position: relative;
+      @media only screen and (max-width: $bp-big) {
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 0 0 0 1rem;
+      }
       @media only screen and (max-width: $bp-largest) {
         font-size: 2rem;
         margin: 0;
@@ -116,8 +129,11 @@
         width: 3px;
         height: 20rem;
         background-color: var(--color-tertiary);
-        @media only screen and (max-width:$bp-largest){
-    height: 15rem;
+        @media only screen and (max-width: $bp-big) {
+          height: 17rem;
+        }
+        @media only screen and (max-width: $bp-largest) {
+          height: 15rem;
         }
       }
     }
@@ -125,6 +141,9 @@
       font-size: 1.7rem;
       margin: 0.5rem 0 2rem;
       padding: 1rem;
+      @media only screen and (max-width: $bp-big) {
+        font-size: 1.4rem;
+      }
       @media only screen and (max-width: $bp-largest) {
         font-size: 1.2rem;
         margin: 0 0 0;
@@ -145,8 +164,11 @@
     clip-path: polygon(10% 0%, 75% 0%, 100% 50%, 75% 100%, 10% 100%);
     z-index: 2;
     position: relative;
-    @media only screen and (max-width:$bp-largest){
-    font-size: 1.5rem;
+    @media only screen and (max-width: $bp-big) {
+      font-size: 1.8rem;
+    }
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 1.5rem;
     }
     /*  &::before{
         position: absolute;
