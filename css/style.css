@@ -205,6 +205,10 @@ body {
     @media only screen and (max-width: 75em) {
       .about-me__welcome {
         font-size: 1.5rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .about-me__welcome {
+        padding: 1rem;
+        font-size: 1.5rem; } }
   .about-me__name {
     font-size: 7rem;
     color: var(--color-white);
@@ -216,12 +220,18 @@ body {
     @media only screen and (max-width: 75em) {
       .about-me__name {
         font-size: 5rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .about-me__name {
+        font-size: 3rem; } }
   .about-me__job {
     font-size: 2rem;
     margin-bottom: 2rem; }
     @media only screen and (max-width: 75em) {
       .about-me__job {
         font-size: 1.5rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .about-me__job {
+        font-size: 1.3rem; } }
   .about-me__paragraph {
     font-size: 1.7rem;
     padding-right: 4rem;
@@ -229,6 +239,9 @@ body {
     @media only screen and (max-width: 75em) {
       .about-me__paragraph {
         font-size: 1.3rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .about-me__paragraph {
+        font-size: 1.2rem; } }
 
 .about-pic__picture {
   height: 75rem;
@@ -240,6 +253,9 @@ body {
   @media only screen and (max-width: 75em) {
     .about-pic__picture {
       height: 50rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .about-pic__picture {
+      height: 40rem; } }
 
 .about-follow {
   display: flex;
@@ -261,6 +277,10 @@ body {
       .about-follow__me {
         font-size: 1.8rem;
         letter-spacing: 10px; } }
+    @media only screen and (max-width: 68.75em) {
+      .about-follow__me {
+        font-size: 1.6rem;
+        letter-spacing: 7px; } }
     .about-follow__me--line::before {
       content: "";
       display: block;
@@ -314,6 +334,11 @@ body {
     @media only screen and (max-width: 75em) {
       .projects__icon {
         height: 4.5rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .projects__icon {
+        height: 3.5rem;
+        top: -2rem;
+        left: 3rem; } }
   .projects__number {
     font-family: "Crimson Pro", sans-serif;
     font-size: 8rem;
@@ -325,6 +350,9 @@ body {
     @media only screen and (max-width: 75em) {
       .projects__number {
         font-size: 6rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .projects__number {
+        font-size: 4rem; } }
   .projects__name {
     font-size: 2.5rem; }
     @media only screen and (max-width: 93.75em) {
@@ -333,6 +361,9 @@ body {
     @media only screen and (max-width: 75em) {
       .projects__name {
         font-size: 1.7rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .projects__name {
+        font-size: 1.4rem; } }
 
 .projects-box {
   display: flex;
@@ -369,6 +400,12 @@ body {
         left: 70%;
         width: 50%;
         text-align: center; } }
+    @media only screen and (max-width: 68.75em) {
+      .projects-box:after {
+        font-size: 1rem;
+        top: -5rem;
+        left: 75%;
+        width: 60%; } }
   .projects-box:hover:after {
     opacity: 1; }
   .projects-box:nth-child(n + 3) {
@@ -385,6 +422,10 @@ body {
     .portfolio {
       margin-top: 5rem;
       margin-bottom: 5rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .portfolio {
+      margin-top: 4rem;
+      margin-bottom: 4rem; } }
 
 .portfolio-top {
   display: flex;
@@ -434,6 +475,10 @@ body {
       .portfolio-btn-1 {
         font-size: 1.5rem;
         padding: 1rem 2.6rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .portfolio-btn-1 {
+        font-size: 1.3rem;
+        padding: .7rem 1.8rem; } }
     .portfolio-btn-1:first-child {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px; }
@@ -461,6 +506,9 @@ body {
       transition: opacity 0.2s;
       font-size: 1.1rem;
       width: 100%; }
+      @media only screen and (max-width: 68.75em) {
+        .portfolio-btn-1:after {
+          top: -75%; } }
     .portfolio-btn-1:hover:after {
       opacity: 1; }
 
@@ -482,6 +530,9 @@ body {
     position: relative;
     border-radius: 5px;
     overflow: hidden; }
+    @media only screen and (max-width: 68.75em) {
+      .portfolio-projects__box {
+        width: calc((100% - 4rem)/2); } }
     .portfolio-projects__box:hover .box__info {
       opacity: 1;
       visibility: visible;
@@ -760,6 +811,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 10rem auto; }
+  @media only screen and (max-width: 93.75em) {
+    .form {
+      margin: 6rem auto; } }
 
 .form-contact {
   display: flex;
@@ -769,12 +823,18 @@ body {
   .form-contact__heading {
     font-size: 5rem;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 93.75em) {
+      .form-contact__heading {
+        font-size: 4rem; } }
     @media only screen and (max-width: 75em) {
       .form-contact__heading {
         font-size: 3rem; } }
   .form-contact__text {
     font-size: 2rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 93.75em) {
+      .form-contact__text {
+        font-size: 1.7rem; } }
     @media only screen and (max-width: 75em) {
       .form-contact__text {
         font-size: 1.4rem; } }
@@ -803,6 +863,9 @@ body {
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 93.75em) {
+      .form-contact-info__subheading {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 75em) {
       .form-contact-info__subheading {
         font-size: 2rem; } }
@@ -817,6 +880,10 @@ body {
   .form-form__heading {
     font-size: 6rem;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 93.75em) {
+      .form-form__heading {
+        font-size: 4rem;
+        margin-bottom: 3rem; } }
     @media only screen and (max-width: 75em) {
       .form-form__heading {
         font-size: 3rem;
@@ -843,6 +910,10 @@ body {
     border-bottom: 1px dashed red; 
 
   } */ }
+  @media only screen and (max-width: 93.75em) {
+    .form-input {
+      height: 6rem;
+      font-size: 1.7rem; } }
   @media only screen and (max-width: 75em) {
     .form-input {
       height: 5rem;
@@ -906,6 +977,9 @@ body {
     font-size: 5rem;
     margin: 5rem 0 5rem;
     text-align: center; }
+    @media only screen and (max-width: 93.75em) {
+      .footer-text__heading {
+        font-size: 3.4rem; } }
     @media only screen and (max-width: 75em) {
       .footer-text__heading {
         font-size: 2.5rem;
@@ -914,6 +988,9 @@ body {
     font-size: 2.4rem;
     margin-bottom: 2.5rem;
     text-align: center; }
+    @media only screen and (max-width: 93.75em) {
+      .footer-text__text {
+        font-size: 2rem; } }
     @media only screen and (max-width: 75em) {
       .footer-text__text {
         font-size: 1.7rem;
@@ -923,6 +1000,9 @@ body {
     justify-content: space-evenly;
     margin-top: 7rem;
     gap: 3rem; }
+    @media only screen and (max-width: 93.75em) {
+      .footer-text__icon {
+        gap: 1.9rem; } }
     @media only screen and (max-width: 75em) {
       .footer-text__icon {
         gap: 1.5rem; } }
@@ -942,6 +1022,10 @@ body {
     height: 50rem;
     border: 1px dashed var(--color-white);
     border-radius: 50%; }
+    @media only screen and (max-width: 93.75em) {
+      .footer-text__line {
+        width: 45rem;
+        height: 45rem; } }
     @media only screen and (max-width: 75em) {
       .footer-text__line {
         width: 35rem;
@@ -954,6 +1038,9 @@ body {
   text-align: center;
   padding: 2rem 0;
   font-size: 2rem; }
+  @media only screen and (max-width: 93.75em) {
+    .copyright {
+      font-size: 1.5rem; } }
   @media only screen and (max-width: 75em) {
     .copyright {
       font-size: 1rem; } }
@@ -962,6 +1049,10 @@ body {
   position: fixed;
   right: 3rem;
   bottom: 4rem; }
+  @media only screen and (max-width: 93.75em) {
+    .icon-up {
+      right: 2rem;
+      bottom: 3rem; } }
   @media only screen and (max-width: 75em) {
     .icon-up {
       right: 2rem;
@@ -972,7 +1063,11 @@ body {
   width: 5rem;
   fill: var(--color-quaternary); }
   .icon-up-1:hover {
-    animation: hammer .2s infinite; }
+    animation: hammer 0.2s infinite; }
+  @media only screen and (max-width: 93.75em) {
+    .icon-up-1 {
+      height: 4rem;
+      width: 4rem; } }
   @media only screen and (max-width: 75em) {
     .icon-up-1 {
       height: 3rem;
