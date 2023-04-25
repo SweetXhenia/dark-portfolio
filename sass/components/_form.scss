@@ -7,6 +7,10 @@
   @media only screen and (max-width:$bp-big){
     margin: 6rem auto;
   }
+  @media only screen and (max-width:$bp-mid){
+   margin: 5rem; 
+   gap: 2rem;
+  }
 }
 .form-contact {
   display: flex;
@@ -14,6 +18,9 @@
   flex: 0 0 40%;
   padding: 1rem 1.5rem;
   //margin: 4rem 2rem;
+  @media only screen and (max-width:$bp-mid){
+   flex: 0 0 30%; 
+  }
   &__heading {
     font-size: 5rem;
     margin-bottom: 1rem;
