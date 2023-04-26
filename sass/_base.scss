@@ -16,6 +16,7 @@
   --color-quaternary-rgb: 247, 157, 101;
   --color-pet: #F7B267; */
   --color-primary: #2D2424;
+  --color-primary-rgb: 45, 36, 36;
   --color-secondary: #5C3D2E ;
   --color-tertiary: #B85C38 ;
   --color-tertiary-rgb:184, 92, 56;
@@ -54,4 +55,5 @@ body {
   background-color: var(--color-primary);
   color: var(--color-white);
   position: relative;
+  margin: 0 auto;
 }

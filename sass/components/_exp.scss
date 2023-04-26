@@ -22,7 +22,6 @@
   &__text {
     font-size: 2rem;
     margin-bottom: 5rem;
-    width: 75%;
     text-align: justify;
     @media only screen and (max-width: $bp-big) {
       font-size: 1.7rem;
@@ -34,6 +33,72 @@
     }
   }
 }
+.timeline {
+  border-left: 4px solid var(--color-tertiary);
+  margin: 5rem;
+  position: relative;
+  line-height: 1.4rem;
+  font-size: 1.4rem;
+  list-style: none;
+  text-align: left;
+  max-width: 50%;
+  padding: 5rem;
+  margin: 5rem auto;
+  background-color: rgba(var(--color-primary-rgb), .4);
+}
+.event {
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  &:before {
+    left: (((12rem * 0.6) + 5rem + 1.2rem + 1.1rem+ (0.4rem * 2)) * 1.5) * -1;
+    color: fade(var(--color-primary), 40%);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 1.5rem;
+    min-width: 12rem;
+  }
+
+  &:after {
+    box-shadow: 0 0 0 0.4rem fade(var(--color-primary), 100%);
+    left: (5rem + 0.4rem + (1.1rem * 0.35)) * -1;
+    background: var(--color-primary);
+    border-radius: 50%;
+    height: 1.1rem;
+    width: 1.1rem;
+    content: "";
+    top: 0.5rem;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px dashed var(--color-primary);
+    padding-bottom: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  &__heading {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-family: "Crimson Pro";
+    padding-bottom: 2rem;
+    @media only screen and (max-width:$bp-mid){
+      font-size: 2rem;
+      letter-spacing: 5px;
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    @media only screen and (max-width:$bp-mid){
+      font-size: 1.3rem;
+    }
+  }
+}
+
 /* .exp-timeline__row {
   display: flex;
   flex-direction: row;
@@ -89,7 +154,7 @@
 ////////////////////////////////////////
 /// 
  */
-.column {
+/* .column {
   display: flex;
   flex-direction: column;
   @media only screen and (max-width: $bp-mid) {
@@ -207,7 +272,7 @@
         background-color: aqua;
         z-index: 1;
     } */
-    &--text {
+/*&--text {
       text-align: center;
       @media only screen and (max-width: $bp-mid) {
         width: 100%;
@@ -225,4 +290,4 @@
     gap: 4rem;
   }
   //width: calc(100% /5);
-}
+} */

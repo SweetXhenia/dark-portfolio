@@ -34,6 +34,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  
   &__item {
     width: 17rem;
     display: flex;
@@ -46,6 +48,11 @@
     @media only screen and (max-width: $bp-largest) {
       width: 11rem;
     }
+    @media only screen and (max-width:$bp-small){
+      &:not(:last-child){
+        display: none;
+      }
+  }
     &:nth-last-child(2) {
       margin-right: 2rem;
     }

@@ -8,6 +8,7 @@
   justify-content: space-around;
   padding: 5rem 0;
   gap: 5rem;
+  flex-wrap: wrap;
 
   &__icon {
     height: 6rem;
@@ -17,10 +18,15 @@
     @media only screen and (max-width: $bp-largest) {
       height: 4.5rem;
     }
-    @media only screen and (max-width:$bp-large){
-    height: 3.5rem;
-    top: -2rem;
-    left: 3rem;
+    @media only screen and (max-width: $bp-large) {
+      height: 3.5rem;
+      top: -2rem;
+      left: 3rem;
+    }
+    @media only screen and (max-width:$bp-mid){
+      height: 5rem;
+      top: -3rem;
+      left: 4rem;
     }
   }
   &__number {
@@ -28,26 +34,32 @@
     font-size: 8rem;
     font-weight: 900;
     line-height: 1.4;
-    @media only screen and (max-width:$bp-big){
-    font-size: 7rem;
+    @media only screen and (max-width: $bp-big) {
+      font-size: 7rem;
     }
     @media only screen and (max-width: $bp-largest) {
       font-size: 6rem;
     }
-    @media only screen and (max-width:$bp-large){
-    font-size: 4rem;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width:$bp-mid){
+      font-size: 7rem;
     }
   }
   &__name {
     font-size: 2.5rem;
-    @media only screen and (max-width:$bp-big){
-    font-size: 2rem;
+    @media only screen and (max-width: $bp-big) {
+      font-size: 2rem;
     }
     @media only screen and (max-width: $bp-largest) {
       font-size: 1.7rem;
     }
-    @media only screen and (max-width:$bp-large){
-    font-size: 1.4rem;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width:$bp-mid){
+     font-size: 2rem; 
     }
   }
 }
@@ -63,6 +75,9 @@
   width: calc(100% / 4);
   aspect-ratio: 16/11;
   position: relative;
+  @media only screen and (max-width:$bp-mid){
+    width: calc((100% - 5rem)/ 2);
+   }
 
   &:after {
     content: attr(data-tooltip);
@@ -76,11 +91,11 @@
     border-radius: 5px;
     opacity: 0;
     transition: opacity 0.2s;
-    @media only screen and (max-width:$bp-big){
-    top: -4.5rem;
-    left: 65%;
-    width: 50%;
-    text-align: center;
+    @media only screen and (max-width: $bp-big) {
+      top: -4.5rem;
+      left: 65%;
+      width: 50%;
+      text-align: center;
     }
     @media only screen and (max-width: $bp-largest) {
       top: -4.5rem;
@@ -88,12 +103,13 @@
       width: 50%;
       text-align: center;
     }
-    @media only screen and (max-width:$bp-large){
-    font-size: 1rem;
-    top: -5rem;
-    left: 75%;
-    width: 60%;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1rem;
+      top: -5rem;
+      left: 75%;
+      width: 60%;
     }
+    
   }
   &:hover:after {
     opacity: 1;
