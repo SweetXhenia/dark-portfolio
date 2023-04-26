@@ -8,7 +8,7 @@
   --color-tertiary-rgb:158, 71, 132;
   --color-quaternary:#d27685;
   --color-quaternary-rgb: 210, 118, 133; */
-  --color-white:#fff;
+  --color-white: #fff;
   /*--color-primary: #e95a53;
   --color-secondary: #F27059 ;
   --color-tertiary: #F4845F ;
@@ -16,14 +16,14 @@
   --color-quaternary: #F79D65 ;
   --color-quaternary-rgb: 247, 157, 101;
   --color-pet: #F7B267; */
-  --color-primary: #2D2424;
+  --color-primary: #2d2424;
   --color-primary-rgb: 45, 36, 36;
-  --color-secondary: #5C3D2E ;
-  --color-tertiary: #B85C38 ;
-  --color-tertiary-rgb:184, 92, 56;
-  --color-quaternary: #E0C097 ;
-  --color-quaternary-rgb:224, 192, 151;
-  --color-pet: #DFBBB1; }
+  --color-secondary: #5c3d2e;
+  --color-tertiary: #b85c38;
+  --color-tertiary-rgb: 184, 92, 56;
+  --color-quaternary: #e0c097;
+  --color-quaternary-rgb: 224, 192, 151;
+  --color-pet: #dfbbb1; }
 
 * {
   margin: 0;
@@ -49,6 +49,30 @@ body {
   color: var(--color-white);
   position: relative;
   margin: 0 auto; }
+
+/* body p::selection {
+  background-color: var(--color-quaternary);
+  color: var(--color-primary);
+} */
+::selection {
+  background-color: var(--color-quaternary);
+  color: var(--color-primary); }
+
+::-webkit-scrollbar {
+  width: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    ::-webkit-scrollbar {
+      width: 1.2rem; } }
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+  /* &:hover{
+    width: 1.5rem;
+  } */ }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--color-quaternary-rgb), 0.67);
+  border-radius: 5px; }
 
 .container {
   max-width: 75vw;
@@ -469,11 +493,13 @@ body {
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .portfolio-top {
+      gap: 1rem; } }
 
 .portfolio-text {
   display: flex;
-  flex-direction: column;
-  flex: 0 0 40%; }
+  flex-direction: column; }
   .portfolio-text__heading {
     font-size: 6rem;
     font-family: "Crimson Pro", sans-serif;
@@ -495,7 +521,8 @@ body {
   flex: 0 0 auto; }
   @media only screen and (max-width: 37.5em) {
     .portfolio-btn {
-      flex-direction: column; } }
+      flex-direction: column;
+      gap: 1rem; } }
   .portfolio-btn-1 {
     font-size: 2rem;
     letter-spacing: 0.5px;
@@ -517,11 +544,15 @@ body {
     @media only screen and (max-width: 68.75em) {
       .portfolio-btn-1 {
         font-size: 1.3rem;
-        padding: .7rem 1.8rem; } }
-  @media only screen and (max-width: 68.75em) and (max-width: 56.25em) {
-    .portfolio-btn-1 {
-      font-size: 1.2rem;
-      padding: .7rem 1.4rem; } }
+        padding: 0.7rem 1.8rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio-btn-1 {
+        font-size: 1.2rem;
+        padding: 0.7rem 1.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio-btn-1 {
+        border-radius: 5px;
+        width: 100%; } }
     .portfolio-btn-1:first-child {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px; }
@@ -552,6 +583,11 @@ body {
       @media only screen and (max-width: 68.75em) {
         .portfolio-btn-1:after {
           top: -75%; } }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio-btn-1:after {
+          top: -75%;
+          font-size: .9rem;
+          background-color: rgba(var(--color-primary), 0.8); } }
     .portfolio-btn-1:hover:after {
       opacity: 1; }
 
@@ -575,7 +611,7 @@ body {
     overflow: hidden; }
     @media only screen and (max-width: 68.75em) {
       .portfolio-projects__box {
-        width: calc((100% - 4rem)/2); } }
+        width: calc((100% - 4rem) / 2); } }
     .portfolio-projects__box:hover .box__info {
       opacity: 1;
       visibility: visible;
@@ -651,7 +687,7 @@ body {
     @media only screen and (max-width: 93.75em) {
       .box__info--btn-2 {
         font-size: 1.4rem;
-        padding: .5rem 1rem; } }
+        padding: 0.5rem 1rem; } }
     @media only screen and (max-width: 75em) {
       .box__info--btn-2 {
         font-size: 1.3rem;
@@ -1210,6 +1246,10 @@ body {
     .icon-up {
       right: 2rem;
       bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .icon-up {
+      right: 1rem;
+      bottom: 2rem; } }
 
 .icon-up-1 {
   height: 5rem;
