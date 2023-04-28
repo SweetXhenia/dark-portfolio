@@ -1,6 +1,9 @@
 .container {
   max-width: 75vw;
   margin: 0 auto;
+  @media only screen and (min-width: $bp-bigger) {
+    max-width: 50vw;
+  }
 }
 .about {
   margin-top: 10rem;
@@ -8,12 +11,12 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  @media only screen and (max-width:$bp-largest){
-   margin-top: 4.5rem;   
+  @media only screen and (max-width: $bp-largest) {
+    margin-top: 4.5rem;
   }
-  @media only screen and (max-width:$bp-small) {
+  @media only screen and (max-width: $bp-small) {
     margin-top: 1rem;
-    flex-direction:column;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

@@ -42,9 +42,15 @@
   list-style: none;
   text-align: left;
   max-width: 70%;
-  padding: 3rem; 
+  padding: 3rem;
   margin: 5rem auto;
-  background-color: rgba(var(--color-primary-rgb), .4);
+  background-color: rgba(var(--color-primary-rgb), 0.4);
+  @media only screen and (max-width: $bp-mid) {
+    margin-right: 4rem;
+  }
+  @media only screen and (max-width: $bp-iphone) {
+    margin-right: 1rem;
+  }
 }
 .event {
   position: relative;
@@ -85,7 +91,7 @@
     letter-spacing: 1rem;
     font-family: "Crimson Pro";
     padding-bottom: 2rem;
-    @media only screen and (max-width:$bp-mid){
+    @media only screen and (max-width: $bp-mid) {
       font-size: 2rem;
       letter-spacing: 5px;
     }
@@ -93,7 +99,7 @@
   &__text {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    @media only screen and (max-width:$bp-mid){
+    @media only screen and (max-width: $bp-mid) {
       font-size: 1.3rem;
     }
   }

@@ -14,14 +14,16 @@
   align-items: center;
   justify-items: center;
   align-content: center;
-
   padding: 4rem;
+  @media only screen and (max-width: $bp-iphone) {
+    padding: 0;
+  }
   &__heading {
     font-size: 5rem;
     margin: 5rem 0 5rem;
     text-align: center;
-    @media only screen and (max-width:$bp-big){
-    font-size: 3.4rem;
+    @media only screen and (max-width: $bp-big) {
+      font-size: 3.4rem;
     }
     @media only screen and (max-width: $bp-largest) {
       font-size: 2.5rem;
@@ -32,8 +34,8 @@
     font-size: 2.4rem;
     margin-bottom: 2.5rem;
     text-align: center;
-    @media only screen and (max-width:$bp-big){
-    font-size: 2rem;
+    @media only screen and (max-width: $bp-big) {
+      font-size: 2rem;
     }
     @media only screen and (max-width: $bp-largest) {
       font-size: 1.7rem;
@@ -45,20 +47,20 @@
     justify-content: space-evenly;
     margin-top: 7rem;
     gap: 3rem;
-    @media only screen and (max-width:$bp-big){
-    gap: 1.9rem;
+    @media only screen and (max-width: $bp-big) {
+      gap: 1.9rem;
     }
-    @media only screen and (max-width:$bp-largest){
-    gap: 1.5rem;
+    @media only screen and (max-width: $bp-largest) {
+      gap: 1.5rem;
     }
   }
   &__icon-1 {
     height: 5rem;
     width: 5rem;
     fill: var(--color-white);
-    @media only screen and (max-width:$bp-largest){
-    height: 4rem;
-    width: 4rem;
+    @media only screen and (max-width: $bp-largest) {
+      height: 4rem;
+      width: 4rem;
     }
     &:hover {
       animation: hammer 0.2s infinite;
@@ -70,13 +72,13 @@
     height: 50rem;
     border: 1px dashed var(--color-white);
     border-radius: 50%;
-    @media only screen and (max-width:$bp-big){
-    width: 45rem;
-    height: 45rem;
+    @media only screen and (max-width: $bp-big) {
+      width: 45rem;
+      height: 45rem;
     }
-    @media only screen and (max-width:$bp-largest){
-    width: 35rem;
-    height: 35rem;
+    @media only screen and (max-width: $bp-largest) {
+      width: 35rem;
+      height: 35rem;
     }
   }
 }

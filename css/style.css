@@ -18,6 +18,7 @@
   --color-pet: #F7B267; */
   --color-primary: #2d2424;
   --color-primary-rgb: 45, 36, 36;
+  --color-primary-tooltip: #1a1515;
   --color-secondary: #5c3d2e;
   --color-tertiary: #b85c38;
   --color-tertiary-rgb: 184, 92, 56;
@@ -77,6 +78,9 @@ body {
 .container {
   max-width: 75vw;
   margin: 0 auto; }
+  @media only screen and (min-width: 160em) {
+    .container {
+      max-width: 50vw; } }
 
 .about {
   margin-top: 10rem;
@@ -262,6 +266,9 @@ body {
     @media only screen and (max-width: 68.75em) {
       .about-me__name {
         font-size: 3rem; } }
+    @media only screen and (max-width: 25em) {
+      .about-me__name {
+        font-size: 2.5rem; } }
   .about-me__job {
     font-size: 2rem;
     margin-bottom: 2rem; }
@@ -281,6 +288,11 @@ body {
     @media only screen and (max-width: 68.75em) {
       .about-me__paragraph {
         font-size: 1.2rem; } }
+    @media only screen and (max-width: 25em) {
+      .about-me__paragraph {
+        text-align: center;
+        padding-right: 0;
+        font-size: 1.3rem; } }
 
 .about-pic__picture {
   height: 75rem;
@@ -395,6 +407,10 @@ body {
         height: 5rem;
         top: -3rem;
         left: 4rem; } }
+    @media only screen and (max-width: 25em) {
+      .projects__icon {
+        top: 2rem;
+        left: -3rem; } }
   .projects__number {
     font-family: "Crimson Pro", sans-serif;
     font-size: 8rem;
@@ -412,6 +428,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .projects__number {
         font-size: 7rem; } }
+    @media only screen and (max-width: 25em) {
+      .projects__number {
+        font-size: 5rem; } }
   .projects__name {
     font-size: 2.5rem; }
     @media only screen and (max-width: 93.75em) {
@@ -426,6 +445,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .projects__name {
         font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .projects__name {
+        font-size: 1.4rem; } }
 
 .projects-box {
   display: flex;
@@ -441,39 +463,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .projects-box {
       width: calc((100% - 5rem) / 2); } }
-  .projects-box:after {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: -4.5rem;
-    left: 55%;
-    text-align: center;
-    transform: translateX(-30%);
-    padding: 5px;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.2s; }
-    @media only screen and (max-width: 93.75em) {
-      .projects-box:after {
-        top: -4.5rem;
-        left: 65%;
-        width: 50%;
-        text-align: center; } }
-    @media only screen and (max-width: 75em) {
-      .projects-box:after {
-        top: -4.5rem;
-        left: 70%;
-        width: 50%;
-        text-align: center; } }
-    @media only screen and (max-width: 68.75em) {
-      .projects-box:after {
-        font-size: 1rem;
-        top: -5rem;
-        left: 75%;
-        width: 60%; } }
-  .projects-box:hover:after {
-    opacity: 1; }
   .projects-box:nth-child(n + 3) {
     border-style: dashed; }
 
@@ -502,6 +491,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .portfolio-top {
       gap: 1rem; } }
+  @media only screen and (max-width: 25em) {
+    .portfolio-top {
+      flex-direction: column; } }
 
 .portfolio-text {
   display: flex;
@@ -557,6 +549,9 @@ body {
         padding: 0.7rem 1.4rem;
         border-radius: 5px;
         width: 100%; } }
+    @media only screen and (max-width: 25em) {
+      .portfolio-btn-1 {
+        width: 70%; } }
     .portfolio-btn-1:first-child {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px; }
@@ -570,30 +565,6 @@ body {
         box-shadow: 0 8px 10px #000; }
       .portfolio-btn-1:hover:last-child {
         box-shadow: 5px 8px 10px #000; }
-    .portfolio-btn-1:after {
-      content: attr(data-tooltip);
-      position: absolute;
-      top: -70%;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 5px;
-      background-color: var(--color-primary);
-      color: var(--color-white);
-      border-radius: 5px;
-      opacity: 0;
-      transition: opacity 0.2s;
-      font-size: 1.1rem;
-      width: 100%; }
-      @media only screen and (max-width: 68.75em) {
-        .portfolio-btn-1:after {
-          top: -75%; } }
-      @media only screen and (max-width: 37.5em) {
-        .portfolio-btn-1:after {
-          top: -75%;
-          font-size: 0.9rem;
-          background-color: rgba(var(--color-primary), 0.8); } }
-    .portfolio-btn-1:hover:after {
-      opacity: 1; }
 
 .btn-active {
   font-weight: 600;
@@ -611,20 +582,25 @@ body {
     width: calc((100% - 6rem) / 3);
     display: block;
     position: relative;
-    border-radius: 5px;
-    overflow: hidden; }
+    border-radius: 5px; }
     @media only screen and (max-width: 68.75em) {
       .portfolio-projects__box {
         width: calc((100% - 4rem) / 2); } }
     @media only screen and (min-width: 56.25em) {
-      .portfolio-projects__box:hover .box__info {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all; } }
+      .portfolio-projects__box {
+        overflow: hidden; }
+        .portfolio-projects__box:hover .box__info {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: all; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio-projects__box {
+        width: 100%; } }
     .portfolio-projects__box--photo {
       width: 100%;
-      height: 100%;
-      object-fit: cover; }
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block; }
 
 .box__info {
   background-color: rgba(var(--color-tertiary-rgb), 0.95);
@@ -646,7 +622,8 @@ body {
       position: static;
       opacity: 1;
       visibility: visible;
-      pointer-events: all; } }
+      pointer-events: all;
+      height: auto; } }
   .box__info--heading {
     font-size: 3rem;
     letter-spacing: 2px;
@@ -713,10 +690,13 @@ body {
     text-decoration: none;
     color: var(--color-white); }
 
-.portfolio-btn {
+.portfolio-btn-2 {
   display: flex;
   justify-content: center;
   margin: 8rem 0; }
+  @media only screen and (max-width: 25em) {
+    .portfolio-btn-2 {
+      margin: 3rem 0; } }
 
 #experiences {
   background-color: var(--color-secondary);
@@ -762,6 +742,12 @@ body {
   padding: 3rem;
   margin: 5rem auto;
   background-color: rgba(var(--color-primary-rgb), 0.4); }
+  @media only screen and (max-width: 56.25em) {
+    .timeline {
+      margin-right: 4rem; } }
+  @media only screen and (max-width: 25em) {
+    .timeline {
+      margin-right: 1rem; } }
 
 .event {
   position: relative; }
@@ -1046,6 +1032,9 @@ body {
   flex-direction: row; }
   .form-contact-info:not(:last-child) {
     margin-bottom: 2.5rem; }
+  @media only screen and (max-width: 25em) {
+    .form-contact-info {
+      flex-direction: column; } }
   .form-contact-info__icon {
     height: 5rem;
     width: 5rem;
@@ -1071,6 +1060,9 @@ body {
     @media only screen and (max-width: 75em) {
       .form-contact-info__subheading {
         font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .form-contact-info__subheading {
+        font-size: 1.5rem; } }
   .form-contact-info a:hover {
     animation: hammer 0.2s infinite; }
 
@@ -1082,6 +1074,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .form-form {
       margin: 0 3rem; } }
+  @media only screen and (max-width: 25em) {
+    .form-form {
+      margin: 0 0; } }
   .form-form__heading {
     font-size: 6rem;
     margin-bottom: 5rem; }
@@ -1123,6 +1118,9 @@ body {
     .form-input {
       height: 5rem;
       font-size: 1.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .form-input {
+      width: 100%; } }
   .form-input:not(:last-child) {
     margin-bottom: 3rem; }
   .form-input:valid {
@@ -1154,6 +1152,9 @@ body {
       height: 15rem;
       font-size: 1.5rem;
       margin-bottom: 1.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .form-textarea {
+      width: 100%; } }
   .form-textarea:focus:valid {
     border-bottom: 3px solid green; }
   .form-textarea:focus:invalid {
@@ -1178,6 +1179,9 @@ body {
   justify-items: center;
   align-content: center;
   padding: 4rem; }
+  @media only screen and (max-width: 25em) {
+    .footer-text {
+      padding: 0; } }
   .footer-text__heading {
     font-size: 5rem;
     margin: 5rem 0 5rem;
@@ -1281,3 +1285,51 @@ body {
     .icon-up-1 {
       height: 3rem;
       width: 3rem; } }
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: var(--color-primary-tooltip);
+  color: var(--color-white);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 1rem; }
+
+[data-tooltip]:hover:after {
+  opacity: 1; }
+
+.projects-box::after {
+  width: 50%;
+  top: -4.5rem;
+  left: 65%;
+  text-align: center; }
+  @media only screen and (max-width: 93.75em) {
+    .projects-box::after {
+      left: 70%; } }
+  @media only screen and (max-width: 75em) {
+    .projects-box::after {
+      left: 75%; } }
+  @media only screen and (max-width: 68.75em) {
+    .projects-box::after {
+      font-size: 0.85rem;
+      left: 75%; } }
+  @media only screen and (max-width: 56.25em) {
+    .projects-box::after {
+      left: 70%;
+      font-size: 1rem;
+      width: 60%;
+      top: -4rem; } }
+
+.portfolio-btn-1::after {
+  width: 80%;
+  top: -70%;
+  left: 50%; }
+
+.portfolio-tooltip::after {
+  top: -3rem;
+  left: 50%;
+  width: 75%;
+  padding: 6px; }
